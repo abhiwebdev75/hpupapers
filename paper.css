@@ -1,0 +1,168 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+body{
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+nav{
+  height: 8vh;
+  background-color:aqua;
+  padding: 1vh;
+}
+nav ul {
+  display: block;
+  position: relative;
+  color: white;
+  z-index: 3;
+}
+ul{
+  list-style: none;
+}
+.semsteres li{
+    margin-left: -2vw;
+  }
+
+.sub-1{
+  display: none;
+}
+.sub-2{
+  display: none;
+}
+.sub-3{
+  display: none;
+}
+.sub-4{
+  display: none;
+}
+.sub-5{
+  display: none;
+}
+.sub-6{
+  display: none;
+}
+#menu{
+  list-style: none;
+  display:flex;
+}
+li{
+  padding-left: 12px;
+}
+.bca .semsteres{
+  display: none;
+}
+.bca:hover .semsteres{
+  display: block;
+}
+ul li li:hover{
+  background-color: #0eb7fa;
+  border-radius: 25px;
+}.sem1:hover>.sub-1{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  width: max-content;
+}
+.sem2:hover>.sub-2{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  width: max-content;
+}
+.sem3:hover>.sub-3{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  width: max-content;
+}
+.sem4:hover>.sub-4{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  width: max-content;
+}
+.sem5:hover>.sub-5{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  width: max-content;
+}
+.sem6:hover>.sub-6{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 80%;
+  top: 0;
+  width: max-content;
+}
+marquee{
+  color:rgb(0, 0, 0);
+  font-size: 3vw;
+  
+}
+.d{
+  position: relative;
+  top: 20%;
+  transform: translate(20%, -50%);
+  padding: 10px;
+}
+.download{
+display: none;
+font-size: 15px;
+border: none;
+width:fit-content;
+border-radius: 10px;
+background-color:#0f759ed0;
+
+}
+.pre{
+  display: none;
+font-size: 15px;
+border: none;
+width:fit-content;
+border-radius: 10px;
+background-color:#0f759ed0;
+}
+.wrapper{
+  height: 10vh;
+  width:85%;
+  margin:20px auto;
+  border-radius:25px;
+  background-color:rgb(219, 214, 214);
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  
+}
+.wrapper:hover{
+background-color: #0eb7fa;
+height:28vh;
+}
+.wrapper:hover  .download{
+  display: inline-block;}
+
+.wrapper:hover  .pre{
+  display: inline-block;
+  }
+h6{
+  text-align: center;
+  padding-top: 25px;
+}
+h5{
+  text-align: center;
+}
