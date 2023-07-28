@@ -25,6 +25,9 @@ nav ul {
 ul{
   list-style: none;
 }
+.semi{
+  position: absolute;
+}
 .semsteres li{
     margin-left: -2vw;
   }
@@ -111,58 +114,48 @@ ul li li:hover{
   top: 0;
   width: max-content;
 }
-marquee{
-  color:rgb(0, 0, 0);
-  font-size: 3vw;
-  
-}
-.d{
-  position: relative;
-  top: 20%;
-  transform: translate(20%, -50%);
-  padding: 10px;
-}
-.download{
-display: none;
-font-size: 15px;
-border: none;
-width:fit-content;
-border-radius: 10px;
-background-color:#0f759ed0;
-
-}
-.pre{
-  display: none;
-font-size: 15px;
-border: none;
-width:fit-content;
-border-radius: 10px;
-background-color:#0f759ed0;
-}
-.wrapper{
-  height: 10vh;
-  width:85%;
-  margin:20px auto;
-  border-radius:25px;
-  background-color:rgb(219, 214, 214);
-  transition: all 1s ease-in-out;
-  overflow: hidden;
-  
-}
-.wrapper:hover{
-background-color: #0eb7fa;
-height:28vh;
-}
-.wrapper:hover  .download{
-  display: inline-block;}
-
-.wrapper:hover  .pre{
-  display: inline-block;
+@media screen and (max-width:500px){
+  marquee{
+    color:rgb(0, 0, 0);
+    font-size: 3vw;
+    
   }
-h6{
-  text-align: center;
-  padding-top: 25px;
-}
-h5{
-  text-align: center;
+  .d{
+    position: relative;
+    top: 20%;
+    transform: translate(30%, -50%);
+    padding: 10px;
+  }
+  .download{
+  display: none;
+  font-size: 15px;
+  border: none;
+  width:fit-content;
+  border-radius: 10px;
+  background-color:#0f759ed0;
+  
+  }
+  .wrapper{
+    height: 10vh;
+    width:85%;
+    margin:20px auto;
+    border-radius:25px;
+    background-color:rgb(219, 214, 214);
+    transition: all 1s ease-in-out;
+    overflow: hidden;}
+  }
+  .wrapper:hover{
+  background-color: #0eb7fa;
+  height:28vh;
+  }
+  .wrapper:hover  .download{
+    display: inline-block;}
+  
+  h6{
+    text-align: center;
+    padding-top: 25px;
+  }
+  h5{
+    text-align: center;
+  }
 }
