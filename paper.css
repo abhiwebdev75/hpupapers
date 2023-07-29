@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin:0;
+}body::-webkit-scrollbar {
+  display: none;
 }
 body{
   background-color: rgb(255, 255, 255);
@@ -10,6 +12,9 @@ body{
 a{
   text-decoration: none;
   color:black;
+}
+.tabss{
+  display: none;
 }
 nav{
   height: 8vh;
@@ -118,6 +123,7 @@ ul li li:hover{
   marquee{
     color:rgb(0, 0, 0);
     font-size: 3vw;
+    background-color: rgb(137, 255, 137);
     
   }
   .d{
@@ -132,8 +138,7 @@ ul li li:hover{
   border: none;
   width:fit-content;
   border-radius: 10px;
-  background-color:#0f759ed0;
-  
+  background-color:#825eefd0;
   }
   .wrapper{
     height: 10vh;
@@ -141,21 +146,78 @@ ul li li:hover{
     margin:20px auto;
     border-radius:25px;
     background-color:rgb(219, 214, 214);
-    transition: all 1s ease-in-out;
+    transition: all 1s cubic-bezier(1,-0.57,.5,1.09);
     overflow: hidden;}
   }
   .wrapper:hover{
   background-color: #0eb7fa;
   height:28vh;
   }
+  .wrapper:hover h6{
+    padding-top:40px;
+  }
   .wrapper:hover  .download{
-    display: inline-block;}
+    display: inline-flex;
+    margin: 5px;
+  }
   
   h6{
     text-align: center;
     padding-top: 25px;
+    margin-bottom: 30px;
+    transition: all 1s ease-in-out;
   }
   h5{
     text-align: center;
+    font-weight: 800;
+    margin: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+  .tabss{
+    animation:fadeEffect 1s;
+  }
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .tab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 12px;
+  }
+  .button{
+    width:50px;
+    border:none;
+    background-color: rgb(26, 173, 227);
+    border-radius: 20px;
+    margin:3vw 0;
+  }
+.landing h2 {
+    position: relative;
+    width: 90%;
+    font-size: 30px;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(to right ,#553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
+    -webkit-background-clip: text;
+    background-clip: text;    
+    background-size: 200%;
+    background-position: -200%;
+    animation: animated-gradient 2s infinite alternate-reverse;      
+  }
+  @keyframes animated-gradient{
+    to{
+      background-position: 200%;
+    }
+  }
+  .button:hover{
+    background-color: #8161da;
+  }
+.button:active{
+  color:red;
+}
+.active{
+  color:rgb(255, 255, 255);
+  background-color: #29048e;
 }
