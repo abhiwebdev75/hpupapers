@@ -4,84 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEVloper</title>
+    <title>ExamPapers-BCA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="paper.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images.png" type="image/x-icon">
 </head>
 
 <body>
     <nav>
-        <ul id="menu">
-            <li><a href="index.html">Home </a></li>
-            <li class="bca"><input type="checkbox" name="bca" id="bca-course"><label for="bca-course" class="bcacore" onclick="side()">BCA - Course</label>
-                <div class="semi">
-                    <ul id="semsteres">
-                        <li class="sem1"><a href="#">BCA - 1 sem</a><br>
-                            <ul class="sub-1">
-                                <li><a href="#maths-1"><span>MATHEMATICS-I</span></a></li>
-                                <li><a href="#eng-1">ENGLISH-I</a></li>
-                                <li><a href="#fundamentals">COMPUTER FUNDAMENTALS</a></li>
-                                <li><a href="#automaiton">OFFICE AUTOMATION TOOLS</a></li>
-                                <li><a href="#c">C-LANGUAGE</a></li>
-                            </ul>
-                        </li>
-                        <li class="sem2"><a href="#">BCA - 2 sem</a><br>
-                            <ul class="sub-2">
-                                <li><a href="#maths-2">MATHEMATICS-II</a></li>
-                                <li><a href="#eng-2">ENGLISH-II</a></li>
-                                <li><a href="#electronics">DIGITAL ELECTRONICS</a></li>
-                                <li><a href="#datastucture">DATA STRUCTURE</a></li>
-                                <li><a href="#dbms">DBMS</a></li>
-                            </ul>
-                        </li>
-                        <li class="sem3"><a href="#">BCA - 3 sem</a><br>
-                            <ul class="sub-3">
-                                <li><a href="#maths-3">MATHEMATICS-III</a></li>
-                                <li><a href="#">BUSINESS STUDY</a></li>
-                                <li><a href="#">COMPUTER ORGANISATION</a></li>
-                                <li><a href="#">C++-LANGUAGE</a></li>
-                                <li><a href="#">DESKTOP PUBLISHING</a></li>
-                            </ul>
-                        </li>
-                        <li class="sem4"><a href="#">BCA - 4 sem</a>
-                            <ul class="sub-4">
-                                <li><a href="#">PERSONNEL MANAGEMENT</a></li>
-                                <li><a href="#">ACCOUNTING</a></li>
-                                <li><a href="#">SYSTEM ANALISIS AND DESIGN</a></li>
-                                <li><a href="#">INTERNET TECH & WEB DEVELOPMENT</a></li>
-                                <li><a href="#">VISUAL BASIC</a></li>
-                            </ul>
-                        </li>
-                        <li class="sem5"><a href="#">BCA - 5 sem</a>
-                            <ul class="sub-5">
-                                <li><a href="#">OPERATING SYSTEM</a></li>
-                                <li><a href="#">eCOMMERECE</a></li>
-                                <li><a href="#">MANAGEMENT INFORMATION SYSTEM</a></li>
-                                <li><a href="#">ASP.NET</a></li>
-                                <li><a href="#">STATISTICAL METHODS</a></li>
-                            </ul>
-                        </li>
-                        <li class="sem6"><a href="#">BCA - 6 sem</a>
-                            <ul class="sub-6">
-                                <li><a href="#">COMPUTER NETWORK</a></li>
-                                <li><a href="#">NUMERICAL METHODS</a></li>
-                                <li><a href="#">MULTIMEDIA</a></li>
-                                <li><a href="#">COMPUTER GRAPHICS</a></li>
-                                <li><a href="#">SOFTWARE ENGINEERING</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-            </li>
-        </ul>
-        </div>
+        <div class="glitch-wrapper">
+            <div class="glitch" data-text="HPU  exam papers">HPU  exam papers</div>
+         </div>
     </nav>
     <div class="landing">
         <marquee>Welcome, buddy here you got all hpu bca question papers</marquee>
-        <h2 class="animate__animated animate__bounceInLeft">Previous year Question Paper(HPU)</h2>
+        <div class="slider">
+            
+        </div>
+        <button class="dbtn" id="sbtn"role="button"><span class="text"><a href="data/bca syllabus.pdf"
+            download>BCA Syllabus</a></span></button>
+        <h2 class="animate__animated animate__bounceInLeft">Previous year BCA Question Paper(HPU)</h2>
         <div class="tab">
             <button class="button" onclick="tab(event,'bca1')" id="defaultOpen">1st</button>
             <button class="button" onclick="tab(event,'bca2')"> 2nd</button>
@@ -99,49 +44,75 @@
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MATHEMATICS-I</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data\Mathematics-1.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data\Mathematics-1.pdf"
+                                    target="_blank"target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data\maths 1 2017.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data\maths 1 2017.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/mathematics-1 2021.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/mathematics-1 2021.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
                 </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ENGLISH-I</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/ENGLISH 1 2021.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/ENGLISH 1 2021.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    
                     </div>
-                 <div id=""
+                 <div id="fundamentals"
                         class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER FUNDAMENTALS</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/fundamentals 2018.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/fundamentals 2018.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/COMPUTER FUNDAMENTALS 2021.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/COMPUTER FUNDAMENTALS 2021.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    
 
                 </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>OFFICE AUTOMATION TOOLS</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/office automation 2018.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/office automation 2018.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/office automation 2019.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/office automation 2019.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
                     </div>
 
                 </div>
@@ -149,12 +120,30 @@
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>C-LANGUAGE</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/c 2017.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/c 2017.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/C PROGRAMMING 2021.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/C PROGRAMMING 2021.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+
+                </div>
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                    <h6>ENVIRONMENTAL STUDIES</h6>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/EVS 2021.pdf"
+                                    download>Download 1</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/EVS 2021.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
 
                 </div>
@@ -168,51 +157,89 @@
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MATHEMATICS-II</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/mathematics -ll 2020.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/mathematics -ll 2020.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/mathematics -ll 2021-22.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/mathematics -ll 2021-22.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/201 Mathematics II.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/201 Mathematics II.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
 
                 </div>
                 <div id=""
-                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
-                    <h6>ENGLISH-II</h6>
-                   <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
-                    </div>
-
-                </div>
-                <div id=""
-                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
-                    <h6>DIGITAL ELECTRONICS</h6>
-                   <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
-                    </div>
-
-                </div>
+                class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <h6>ENGLISH-II</h6>
+                <div class="inline">
+                    <button class="dbtn" role="button"><span class="text"><a href="data/202 Communicative English.pdf"
+                        download>Download 1</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/202 Communicative English.pdf"
+                            target="_blank">Preview 1</a></span></button>
+                            
+                        </div>
+                        <div class="inline">
+                            <button class="dbtn" role="button"><span class="text"><a href="data/ENGLISH -2 2021-22.pdf"
+                                download>Download 2</a></span></button>
+                                <button class="pbtn" role="button"><span class="text"><a href="data/ENGLISH -2 2021-22.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                                    
+                                </div>
+                                        
+                                    </div>
+                                    <div id=""
+                                        class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                                        <h6>DIGITAL ELECTRONICS</h6>
+                                       <div class="inline">
+                                            <button class="dbtn" role="button"><span class="text"><a href="data/digital electronics 2020.pdf"
+                                                        download>Download 1</a></span></button>
+                                            <button class="pbtn" role="button"><span class="text"><a href="data/digital electronics 2020.pdf"
+                                                        target="_blank">Preview 1</a></span></button>
+                                            
+                                        </div>
+                                        <div class="inline">
+                                            <button class="dbtn" role="button"><span class="text"><a href="data/digital electronics 2021-22.pdf"
+                                                        download>Download 2</a></span></button>
+                                            <button class="pbtn" role="button"><span class="text"><a href="data/digital electronics 2021-22.pdf"
+                                                        target="_blank">Preview 2</a></span></button>
+                                            
+                                        </div>
+                    
+                                    </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DATA STRUCTURE</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/204 Data Structures.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/204 Data Structures.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/DATA STRUCTURE 2020.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/DATA STRUCTURE 2020.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/data structure 2021-22.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/data structure 2021-22.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
 
                 </div>
@@ -220,12 +247,25 @@
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DBMS</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/DBMS 2018.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/DBMS 2018.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/DBMS 2020.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/DBMS 2020.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/DBMS 2021- 22.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/DBMS 2021- 22.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
 
                 </div>
@@ -238,65 +278,100 @@
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MATHEMATICS-III</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/mathematics -lll 2020.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/mathematics -lll 2020.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/mathematics -lll 2022-23.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/mathematics -lll 2022-23.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/HPU-B.C.A.-3rd-sem.-mathematics-question-papers-1.pdf"
+                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/HPU-B.C.A.-3rd-sem.-mathematics-question-papers-1.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
+                    </div>
+       
 
                 </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>BUSINESS STUDY</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/business studies 2020.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/business studies 2020.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/business studies 2022-23.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/business studies 2022-23.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    
 
                 </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER ORGANISATION</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/computer organisation 2020.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/computer organisation 2020.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                  
 
                 </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>C++ LANGUAGE</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/C++  2020.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/C++  2020.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/c++ 2022-23.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/c++ 2022-23.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                
 
                 </div>
                 <div id=""
                     class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DESKTOP PUBLISHING</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/DTP 2020.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/DTP 2020.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/DTP 2022 -23.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/DTP 2022 -23.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+
 
                 </div>
             </div>
@@ -307,60 +382,98 @@
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>PERSONNEL MANAGEMENT</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/personal management.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/personal management.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/personnel management 2022-23.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/personnel management 2022-23.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/personnel management.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/personnel management.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
 
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ACCOUNTING</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/accounting.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/accounting.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/ACCOUNTING 2.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/ACCOUNTING 2.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/accounting 2022-23.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/accounting 2022-23.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
 
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>SYSTEM ANALISIS AND DESIGN</h6>
                    <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/system analysis and design.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/system analysis and design.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/SYSTEM ANALYSIS AND DESIGN 2022-23.pdf"
                                     download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="pbtn" role="button"><span class="text"><a href="data/SYSTEM ANALYSIS AND DESIGN 2022-23.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/system analysis and design 2.pdf"
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/system analysis and design 2.pdf"
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
 
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>INTERNET TECHNOLOGY AND WEB DESIGN</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/ITWD.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/ITWD.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>VISUAL BASIC</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/visual basic.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/visual basic.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                  
                 </div>
             </div>
             <div id="bca5" class="tabss">
@@ -370,57 +483,71 @@
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>OPERATING SYSTEM</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/18-opreating system.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/18-opreating system.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>eCOMMERECE</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/19-ecommerce.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/19-ecommerce.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                   
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MANAGEMENT INFORMATION SYSTEM</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/MIS.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/MIS.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                 
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ASP.NET</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/aspnet.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/aspnet.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/2019-asp.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/2019-asp.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                  
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>STATISTICAL METHODS</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
+                        <button class="dbtn" role="button"><span class="text"><a href="data/statistical methods.pdf"
                                     download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/statistical methods.pdf"
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href="data/2018- methods.pdf"
+                                    download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href="data/2018- methods.pdf"
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                  
                 </div>
             </div>
             <div id="bca6" class="tabss">
@@ -430,23 +557,36 @@
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER NETWORK</h6>
                     <div class="inline">
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 1</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 2</a></span></button>
-                        <button class="dbtn" role="button"><span class="text"><a href=""
-                                    download>Download 3</a></span></button>
+                        <button  disabled class="dbtn" role="button"><span class="text"><a href=""
+                                    download="">Download 1</a></span></button>
+                        <button disa class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 1</a></span></button>
+                        
                     </div>
+                  
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>NUMERICAL METHODS</h6>
                     <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 1</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
@@ -454,10 +594,23 @@
                     <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 1</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
@@ -465,10 +618,23 @@
                     <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 1</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
@@ -476,10 +642,23 @@
                     <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 1</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 1</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 2</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 2</a></span></button>
+                        
+                    </div>
+                    <div class="inline">
                         <button class="dbtn" role="button"><span class="text"><a href=""
                                     download>Download 3</a></span></button>
+                        <button class="pbtn" role="button"><span class="text"><a href=""
+                                    target="_blank">Preview 3</a></span></button>
+                        
                     </div>
                 </div>
             </div>
@@ -496,9 +675,9 @@
 
           <div class="col">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100022917481085"><i class="fa fa-facebook"></i></a></li>
               <li><a class="twitter" href="#"><i class="fa fa-telegram"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="insta" href="https://instagram.com/im.a_b_h_i?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram"></i></a></li>
               <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
             </ul>
           </div>
