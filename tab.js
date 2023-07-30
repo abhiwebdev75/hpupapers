@@ -12,9 +12,20 @@ function tab(evt, sem) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
-showiframe(source)
-{
-  console.log(this)
-  
-
-}
+function side() {
+  var navbar = document.getElementById('semsteres');
+  var check = document.getElementById('bca-course');
+  if (check.checked) {
+        navbar.style.display = "block";
+  } else {
+        navbar.style.display = "none";
+  }}
+  function close() {
+    var navbar = document.getElementById('semsteres');
+    
+    var check = document.getElementById('bca-course');
+    if (check.checked) {
+          navbar.style.display = "none";
+    } else {
+          navbar.style.display = "none";
+    }}
