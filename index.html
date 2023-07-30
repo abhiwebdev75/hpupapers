@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="paper.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -17,12 +17,12 @@
     <nav>
         <ul id="menu">
             <li><a href="index.html">Home </a></li>
-            <li class="bca"><a href="#bcacore">BCA - Course</a>
+            <li class="bca"><input type="checkbox" name="bca" id="bca-course"><label for="bca-course" class="bcacore" onclick="side()">BCA - Course</label>
                 <div class="semi">
-                    <ul class="semsteres">
+                    <ul id="semsteres">
                         <li class="sem1"><a href="#">BCA - 1 sem</a><br>
                             <ul class="sub-1">
-                                <li><a href="#maths-1">MATHEMATICS-I</a></li>
+                                <li><a href="#maths-1"><span>MATHEMATICS-I</span></a></li>
                                 <li><a href="#eng-1">ENGLISH-I</a></li>
                                 <li><a href="#fundamentals">COMPUTER FUNDAMENTALS</a></li>
                                 <li><a href="#automaiton">OFFICE AUTOMATION TOOLS</a></li>
@@ -95,30 +95,68 @@
                 <h5 id="sem1" class="animate__animated animate__backInDown">
                     BCA 1st SEMESTER
                 </h5>
-                <div id="maths-1" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id="maths-1"
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MATHEMATICS-I</h6>
-                    <div class="butons">
-                        <div class="inline">
-                            <button class="download"><a href="">Download</a> </button>
-                            <button class="preview"><a href="" onclick="showiframe(this)">Preview</a></button>
-                        </div>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
                     </div>
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ENGLISH-I</h6>
-                    
-                </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+                    </div>
+                 <div id=""
+                        class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER FUNDAMENTALS</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>OFFICE AUTOMATION TOOLS</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>C-LANGUAGE</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
             </div>
             <div id="bca2" class="tabss">
@@ -126,50 +164,140 @@
                 <h5 id="sem2">
                     BCA 2nd SEMESTER
                 </h5>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MATHEMATICS-II</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ENGLISH-II</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DIGITAL ELECTRONICS</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DATA STRUCTURE</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DBMS</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
             </div>
             <div id="bca3" class="tabss">
                 <h5 id="sem3">
                     BCA 3rd SEMESTER
                 </h5>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MATHEMATICS-III</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>BUSINESS STUDY</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER ORGANISATION</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>C++ LANGUAGE</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
-                <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
+                <div id=""
+                    class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>DESKTOP PUBLISHING</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
             </div>
             <div id="bca4" class="tabss">
@@ -178,23 +306,61 @@
                 </h5>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>PERSONNEL MANAGEMENT</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ACCOUNTING</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>SYSTEM ANALISIS AND DESIGN</h6>
-                    
+                   <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
+
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>INTERNET TECHNOLOGY AND WEB DESIGN</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>VISUAL BASIC</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
             </div>
             <div id="bca5" class="tabss">
@@ -203,23 +369,58 @@
                 </h5>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>OPERATING SYSTEM</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>eCOMMERECE</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MANAGEMENT INFORMATION SYSTEM</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>ASP.NET</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>STATISTICAL METHODS</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
             </div>
             <div id="bca6" class="tabss">
@@ -228,34 +429,82 @@
                 </h5>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER NETWORK</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>NUMERICAL METHODS</h6>
-                    <div class="d">
-                        <button class="download"><a href="" download>DOWNLOAD 1</a></button>
-
-                        <br>
-                        <button class="download"><a href="/data/2018- methods.pdf" download>DOWNLOAD 2</a></button>
-                        <button class="download"><a href="" download>DOWNLOAD 3</a></button>
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
                     </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>MULTIMEDIA</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>COMPUTER GRAPHICS</h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
                 <div id="" class="wrapper animate__animated animate__backInUp animate__animated animate__backInUp">
                     <h6>SOFTWARE ENGINEERING </h6>
-                    
+                    <div class="inline">
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 1</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 2</a></span></button>
+                        <button class="dbtn" role="button"><span class="text"><a href=""
+                                    download>Download 3</a></span></button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><br><br><br>
+   
+<footer>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+         <a href="#" class="company">Abhinash</a>.
+            </p>
+          </div>
 
+          <div class="col">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-telegram"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+        
+</footer> </div>
 </body>
 <script src="tab.js"></script>
 
