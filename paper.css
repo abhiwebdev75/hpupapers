@@ -169,7 +169,7 @@ ul li li:hover{
   top: 0;
   width: max-content;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
   marquee{
     color:rgb(0, 0, 0);
     font-size: 3vw;
@@ -422,7 +422,7 @@ footer{
 .fa-linkedin:hover{
   color:#2f6ed3;
 }
-@media screen and (min-width:500px) {
+@media screen and (min-width:600px) {
   .tabss{
     display: block;
   }
